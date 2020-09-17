@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="kr">
+  <head>
+    <!-- script -->
+	  <script>
+		function find_text()
+		{
+			form1.action="#";
+			form1.submit();
+		}
+	</script>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>판매관리</title>
+
+	<!-- Bootstrap CSS -->
+    <link href="/~sale21/my/css/bootstrap.min.css" rel="stylesheet">
+    <script src="/~sale21/my/js/jquery-3.3.1.min.js"></script>
+    <script src="/~sale21/my/js/popper.min.js"></script>
+    <script src="/~sale21/my/js/bootstrap.min.js"></script>
+	<link  href="/~sale21/my/css/my.css" rel="stylesheet">
+
+  </head>
+  <body>
+
+	 <div class="container">
+
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<a class="navbar-brand" href="#">판매관리</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNavDropdown">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="#">매입</a>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link" href="#">매출</a>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link" href="#">기간조회</a>
+					</li
+
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">  
+							  통계
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<a class="dropdown-item" href="#">Best제품</a>
+							<a class="dropdown-item" href="#">월별제품별현황</a>
+							<a class="dropdown-item" href="#">종류별분포도</a>
+						</div>
+					</li>
+
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">  
+							  기초정보
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<a class="dropdown-item" href="#">구분</a>
+							<a class="dropdown-item" href="#">제품</a>
+							<a class="dropdown-item" href="#">사용자</a>
+						</div>
+					</li>
+
+				</ul>
+			</div>
+		</nav>
+<br>
+		<div class="alert mycolor1" role="alert">사용자</div>
+
+		<form name="form1" method="member_insert.html">
+			<table class="table table-bordered table-sm mymargin5">
+			<tr>
+				<td width="20%" class="mycolor2" style="vertical-align:middle"> 번호</td>
+				<td width="80%" align="left">1</td>
+			</tr>
+			<tr>
+				<td width="20%" class="info" style="vertical-align:middle">
+					<font color="red">*</font> 이름
+				</td>
+				<td width="80%" align="left">
+					<div class="form-inline">
+						<input  type="text" name="name" class="form-control form-control-sm">
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td width="20%" class="info" style="vertical-align:middle">
+					<font color="red">*</font> 아이디
+				</td>
+				<td width="80%" align="left">
+					<div class="form-inline">
+						<input  type="text" name="uid" class="form-control form-control-sm">
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td width="20%" class="info" style="vertical-align:middle">
+					<font color="red">*</font> 암호
+				</td>
+				<td width="80%" align="left">
+					<div class="form-inline">
+						<input  type="text" name="pwd" class="form-control form-control-sm">
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td width="20%" class="info" style="vertical-align:middle">
+					전화
+				</td>
+				<td width="80%" align="left">
+					<div class="form-inline">
+						<input  type="text" name="tel1" size="3" class="form-control form-control-sm">&nbsp;-&nbsp;
+						<input  type="text" name="tel2" size="4" class="form-control form-control-sm">&nbsp;-&nbsp;
+						<input  type="text" name="tel3" size="4" class="form-control form-control-sm">
+					</div>
+				</td>
+			</tr>
+			<td width="20%" class="info" style="vertical-align:middle">
+					등급
+				</td>
+				<td width="80%" align="left">
+					<div class="form-inline">
+						<input  type="radio" name="rank" value="0" class="form-control form-control-sm">직원 &nbsp;&nbsp;
+						<input  type="radio" name="rank" value="1" class="form-control form-control-sm"> 관리자
+					</div>
+				</td>
+			</tr>
+			 <!--… <!– 아이디, 암호, 전화, 등급  행 추가  …-->
+			</table>
+			<div align="center">
+				<a href="#" class="btn btn-sm mycolor1">수정</a>
+				<a href="#" class="btn btn-sm mycolor1" onClick="return confirm('삭제할까요?');)">삭제</a>
+				<input type="button" value="삭제" class="btn btn-sm mycolor1">
+
+				<input type="button" value="저장" class="btn btn-sm mycolor1"> &nbsp;
+
+				<input type="button" value="이전화면" class="btn btn-sm mycolor1" onClick="history.back();">
+			</div>
+		</form>
+
+
+	 </div>
+  </body>
+</html>

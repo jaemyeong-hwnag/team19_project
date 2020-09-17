@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="kr">
+  <head>
+    <!-- script -->
+	  <script>
+		function find_text()
+		{
+			form1.action="#";
+			form1.submit();
+		}
+	</script>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>판매관리</title>
+
+	<!-- Bootstrap CSS -->
+    <link href="/~sale21/my/css/bootstrap.min.css" rel="stylesheet">
+    <script src="/~sale21/my/js/jquery-3.3.1.min.js"></script>
+    <script src="/~sale21/my/js/popper.min.js"></script>
+    <script src="/~sale21/my/js/bootstrap.min.js"></script>
+	<link  href="/~sale21/my/css/my.css" rel="stylesheet">
+
+  </head>
+  <body>
+
+	 <div class="container">
+
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<a class="navbar-brand" href="#">판매관리</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNavDropdown">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="#">매입</a>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link" href="#">매출</a>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link" href="#">기간조회</a>
+					</li>
+
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">  
+							  통계
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<a class="dropdown-item" href="#">Best제품</a>
+							<a class="dropdown-item" href="#">월별제품별현황</a>
+							<a class="dropdown-item" href="#">종류별분포도</a>
+						</div>
+					</li>
+
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">  
+							  기초정보
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<a class="dropdown-item" href="#">구분</a>
+							<a class="dropdown-item" href="#">제품</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#">사용자</a>
+						</div>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link" href="#">로그인</a>
+					</li>
+				</ul>
+				<a class="btn btn-sm btn btn-outline-secondary btn-dark" href="#">로그인</a>
+			</div>
+		</nav>
+		<br>
+		<div class="alert mycolor1" role="alert">사용자</div>
+
+		<form name="form1" action="" method="post">
+			<div class="row">
+				<div class="col-3" align="left">            
+					<div class="input-group  input-group-sm">
+			<div class="input-group-prepend">
+				<span class="input-group-text">이름</span>
+			</div>
+			<input type="text" name="text1" class="form-control" onKeydown="if (event.keyCode == 13) { find_text(); }">
+			<div class="input-group-append">
+				<button class="btn  btn-primary" type="button" onClick="find_text();">검색</button>
+			</div>
+		</div>
+				</div>
+				<div class="col-9" align="right">           
+					   <a href="#" class="btn btn-sm mycolor1">추가</a>
+				</div>
+			</div>
+		</form>
+
+		<table class="table  table-bordered  table-sm  mymargin5">
+			<tr class="mycolor2">
+				<td width="10%">번호</td>
+				<td width="20%">아이디</td>
+				<td width="20%">암호</td>
+				<td width="20%">이름</td>
+				<td width="20%">전화</td>
+				<td width="10%">등급</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>admin</td>
+				<td>1234</td>
+				 <td>관리자</td>
+				<td>010-1111-1111</td>
+			<td>관리자</td>
+			</tr>
+		</table>
+
+		<nav aria-label="page navigation example">
+			<ul class="pagination pagination-sm justify-content-center mymargin5">
+				<span aria-hidden="true">◁</span>
+				<li class="page-item"><a class="page-link active" href="#">1</a></li>
+				<li class="page-item"><a class="page-link active" href="#">2</a></li>
+				<li class="page-item"><a class="page-link active" href="#">3</a></li>
+				<span aria-hidden="true">▷</span>
+			</ul>
+		</nav>
+
+	 </div>
+  </body>
+</html>

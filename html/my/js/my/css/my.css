@@ -1,0 +1,33 @@
+
+table { font-size:10pt; text-align:center; vertical-align:middle; }
+
+.mymargin5 { margin:5px 0px 5px 0px; }
+
+.mycolor1 { background-color:steelblue; color:white; }
+.mycolor2 { background-color:lightsteelblue; }
+
+.mythumb_box {
+	font-size : 14px;
+	text-align:center;
+	border: 1px solid lightgray;
+	padding:3px;
+	margin:5px 0px 5px 0px;
+}
+.mythumb_image {
+	height: 150px;
+	max-width: 100%;
+	margin-bottom:3px
+}
+.mythumb_bigimage {
+	height: 550px;
+	max-width: 100%;
+	margin-bottom:3px
+}
+.mythumb_text {
+	border: 1px solid lightgray;
+	background-color:lightsteelblue;
+	padding:3px;
+}
+
+.mynopic { background-color:#eeeeee; width:98%; height:140px; border:1px solid #cccccc; border-radius:5px; margin:3px }
+
